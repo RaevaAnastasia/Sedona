@@ -1,0 +1,387 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "PT Sans", Arial, sens-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #333333;
+	text-transform: uppercase;	 
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden,
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    font-size: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.main-navigation {
+	line-height: 26px;
+	color: #000000;
+	font-weight: 700;
+}
+
+.site-navigation,
+.features-list,
+.footer-social-list,
+.filters-form-checkbox-container,
+.result-sorting-list,
+.results-list {
+	list-style: none;
+}
+
+.site-navigation-item-link {
+	color: #000000;
+}
+
+.site-navigation-item-link:hover,
+.site-navigation-item-link:focus {
+	color: #81b3d2;
+	outline: none;
+}
+
+.site-navigation-item-link:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation-item-link.active {
+	color: #766357;
+}
+
+
+.introduction {
+	background-color: #81b3d2;
+	background-image: url("../img/background-photo.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.info-title {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+	text-align: center;
+}
+
+.info-desc {
+	line-height: 26px;
+	font-weight: 400;
+	color: #333333;
+	text-align: center;
+}
+
+.features-item-title {
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+	font-weight: 700;
+}
+
+.features-item-number,
+.features-item-desc {
+	color: #333333;
+}
+
+.features-item:first-child,
+.features-item:nth-child(5) {
+	background-color: #81b3d2;
+}
+
+.features-item:first-child h3,
+.features-item:nth-child(5) h3 {	
+	color: #ffffff;	
+}
+
+.features-item:first-child p,
+.features-item:nth-child(5) p {
+	color: #ffffff;
+} 
+
+.features-item:nth-child(6),
+.features-item:nth-child(7),
+.features-item:nth-child(8) {
+	background-color: #eeeeee;
+}
+
+.search-title {
+	font-size: 30px;
+	line-height: 36px;
+	color: #000000;
+	font-weight: 700;
+	text-align: center;
+}
+
+.search-desc {
+	line-height: 24px;
+	text-align: center;
+	color: #333333;
+}
+
+.button {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.search-button {
+	background-color: #766357;
+}
+
+.search-button:hover,
+.search-button:focus {
+	background-color: #604e43;
+}
+
+.search-button:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #503e33;
+}
+
+.footer-tag {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+	text-align: center;
+}
+
+.footer-copyright {
+	line-height: 26px;
+	color: #000000;
+	text-align: center;
+}
+
+.search-field-title {
+	line-height: 26px;
+	color: #000000;
+	text-align: left;
+	font-weight: 700;
+}
+
+.footer-copyright-link:hover path,
+.footer-copyright-link:focus path {
+	fill: #81b3d2;
+}
+
+.footer-copyright-link:active path {
+	fill: #bdbbbc;
+}
+
+.search-field input {
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+
+	background-color: #f2f2f2;
+	border: none;
+}
+
+.search-field input:hover {
+	background-color: #ebebeb;
+	border: none;
+}
+
+.search-field input:focus {
+	background-color: #ffffff;
+	outline: 2px solid #e5e5e5;	 
+}
+
+.search-field input::-webkit-input-placeholder {
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.search-field input:-moz-placeholder  {
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.search-field input::-moz-placeholder {
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.search-field input:-ms-input-placeholder {
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.search-form-button {
+	background-color: #81b3d2;
+	border: none;
+} 
+
+.search-form-button:hover,
+.search-form-button:focus {
+	background-color: #669ec0;
+}
+
+.search-form-button:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #5496bd;
+}
+
+.filters-form-checkbox {
+	border: none;
+}
+
+.filters {
+	background-color: #81b3d2;
+	background-image: url("../img/filter-background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.filters-form-checkbox-title,
+.filters-form-range-title {
+	font-size: 16px;
+	line-height: 21px;
+	color: #ffffff;
+	font-weight: 700;
+}
+
+.filters-form-checkbox-item-title,
+.filters-form-range-limits-lower,
+.filters-form-range-limits-top {	 
+	line-height: 21px;
+	color: #ffffff;	 
+}
+
+.filter-button {
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+	font-weight: 400;
+	text-transform: inherit;
+	background-color: transparent;
+	border: 2px solid #ffffff;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+	color: #000000;
+	background-color: #ffffff;
+	outline: none;
+}
+
+.result-sorting-number {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: 700;
+}
+
+.result-sorting-title,
+.result-sorting-item {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.result-sorting-title {
+	color: #000000;
+}
+
+.result-sorting-item {
+	color: rgba(0, 0, 0, 0.3);
+	text-decoration: underline;
+	text-decoration-color: #81b3d2;
+	text-decoration-style: dotted;
+}
+
+.result-sorting-item.active {
+	color: #81b3d2;
+	text-decoration: none;
+}
+
+.result-sorting-item:hover,
+.result-sorting-item:focus {
+	color: #81b3d2;	
+}
+
+.result-sorting-item:active {
+	color: #000000;
+	text-decoration: none;
+}
+
+.results-item-content-title-link {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: 700;
+}
+
+.results-item-content-title-link:hover,
+.results-item-content-title-link:focus {
+	color: #81b3d2;
+}
+
+.results-item-content-title-link:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.results-item-content-desc-type,
+.results-item-content-desc-price {
+	line-height: 21px;
+	color: #333333;
+}
+
+.button-more {
+	font-size: 14px;
+	line-height: 21px;	 
+	background-color: #81b3d2;
+}
+
+.button-more:hover,
+.button-more:focus {
+	background-color: #669ec0;
+}
+
+.button-more:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #5496bd;
+}
+
+.button-book {
+	font-size: 14px;
+	line-height: 21px;	 
+	background-color: #766357;
+}
+
+.button-book:hover,
+.button-book:focus {
+	background-color: #604e43;
+}
+
+.button-book:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #503e33;
+}
+
+.results-item-content-rate {
+	color: #666666;
+	background-color: #f2f2f2;
+}
+
