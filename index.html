@@ -8,30 +8,35 @@
 	<link href="css/css.css" rel="stylesheet">
 </head>
 <body>
-	<header class="main-header">
+	<header class="main-header container">
 		<nav class="main-navigation">
+			<a class="main-navigation-logo" > 
+				<img src="img/logo.svg" width="140" height="71" alt="Логотип Седоны">
+			</a>
 			<ul class="site-navigation">
 				<li class="site-navigation-item"><a class="site-navigation-item-link"  href="info.html" aria-label="Перейти на страницу информации о Седоне">Информация</a></li>
-				<li class="site-navigation-item"><a class="site-navigation-item-link" href="photo.html" aria-label="Перейти на страницу с фото и видео">Фото и видео</a></li>
-				<li class="site-navigation-item"><img src="img/logo.svg" width="140" height="71" alt="Логотип Седоны"></li>
+				<li class="site-navigation-item"><a class="site-navigation-item-link" href="photo.html" aria-label="Перейти на страницу с фото и видео">Фото и видео</a></li>				
 				<li class="site-navigation-item"><a class="site-navigation-item-link" href="map.html" aria-label="Перейти на страницу с картой штата">Карта штата</a></li>
 				<li class="site-navigation-item"><a class="site-navigation-item-link" href="search.html" aria-label="Перейти на страницу выбора гостиницы">Гостиницы</a></li>
 			</ul>			
 		</nav>
 	</header>
-	<main>
+	<main class="container">
 		<h1 class="visually-hidden">Седона</h1>
 		<div class="introduction">
 			<img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в прекрасную Седону! Лучше, чем Гранд Каньен">
 		</div>
 		<section class="info">
-			<h2 class="info-title">Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
+			<h2 class="info-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
 			<p class="info-desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 			<ul class="features-list">
 				<li class="features-item">
-					<h3 class="features-item-title">Настоящий городок</h3>
-					<p class="features-item-number">— №1 —</p>
-					<p class="features-item-desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+					<div class="features-item-wrapper">  
+						<h3 class="features-item-title">Настоящий городок</h3>
+						<p class="features-item-number">— №1 —</p>
+						<p class="features-item-desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+					</div>
+					<img src="img/feature-1.jpg" width="800" height="256" alt="Умиротворенный пейзаж с домом и горами">
 				</li>
 				<li class="features-item">
 					<h3 class="features-item-title">Жильё</h3>
@@ -46,9 +51,12 @@
 					<p class="features-item-desc">Не только китайского, но и местного производства!</p>
 				</li>
 				<li class="features-item">
-					<h3 class="features-item-title">Там есть Мост дьявола</h3>
-					<p class="features-item-number">— №2 —</p>
-					<p class="features-item-desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+					<img src="img/feature-5.jpg" width="800" height="256" alt="Пейзаж с ровным плато в горах">
+					<div class="features-item-wrapper">
+						<h3 class="features-item-title">Там есть Мост дьявола</h3>
+						<p class="features-item-number">— №2 —</p>
+						<p class="features-item-desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+					</div>
 				</li>
 				<li class="features-item">
 					<h3 class="features-item-title">Небольшая площадь</h3>
@@ -63,20 +71,49 @@
 				<li class="features-item">
 					<h3 class="features-item-title">Мало туристов</h3>
 					<p class="features-item-number">— №5 —</p>
-					<p class="features-item-desc">Большинство едет в гранд каньон и толпится там</p>
+					<p class="features-item-desc">Большинство едет в гранд каньон  и толпится там</p>
 				</li>				
 			</ul>
 		</section>
 		<section class="search">
 			<h2 class="search-title">Заинтересовались?</h2>
-			<p class="search-desc">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+			<p class="search-desc"><span class="search-desc-wrapper">Укажите предполагаемые даты поездки,</span>и мы покажем вам лучшие предложения гостиниц в седоне</p>
 			<a href="search.html" class="button search-button">Поиск гостиницы в Седоне</a>
+			<section class="search-dropdown">
+				<h2 class="visually-hidden">Поиск гостиницы в Седонe</h2>
+				<form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+					<p class="search-field calendar">
+						<label class="search-field-title" for="field-arrival">Дата заезда:</label>
+						<input class="search-field-arrival" id="field-arrival" type="text" name="date-arrival" placeholder="24 апреля 2017">				
+					</p>
+					<p class="search-field calendar">
+						<label class="search-field-title" for="field-exit">Дата выезда:</label>
+						<input class="search-field-exit" id="field-exit" type="text" name="date-exit" placeholder="4 июля 2017">
+					</p>
+					<div class="search-field-wrapper">
+					<p class="search-field">
+						<label class="search-field-title" for="field-adult">Взрослые:</label>
+						<span class="minus"></span>
+						<input class="search-field-adult" id="field-adult" type="text" name="quality-adult" placeholder="2">
+						<span class="plus"></span>
+					</p>
+					<p class="search-field">
+						<label class="search-field-title" for="field-child">Дети:</label>
+						<span class="minus"></span>
+						
+						<input class="search-field-child" id="field-child" type="text" name="quality-child" placeholder="0">
+						<span class="plus"></span>
+					</p></div>
+					<button class="button search-form-button" type="submit">Найти</button>
+				</form>		
+			</section>
 		</section>
 		<div class="map">
-			<img src="img/map.jpg" width="1200" height="593" alt="Карта штата с отметкой местоположения Седоны"> 
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26189.451980593836!2d-111.7721946!3d34.8642295!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1547906206074" width="1200" height="475" style="border:0" allowfullscreen></iframe>
+			<img src="img/map.jpg" width="1200" height="475" alt="Карта штата с отметкой местоположения Седоны"> 
 		</div>
 	</main>
-	<footer class="main-footer"> 
+	<footer class="main-footer container"> 
 		<p class="footer-tag">#visitSedona</p>
 		<ul class="footer-social-list">
 			<li class="footer-social-item"><a class="footer-social-item-link" href="https://twitter.com" aria-label="Перейти на страницу Седоны в Твиттере"><span class="visually-hidden">Twitter</span></a></li>
@@ -90,27 +127,7 @@
 		</p>
 	</footer>
 
-	<section class="search-dropdown">
-		<h2 class="visually-hidden">Поиск гостиницы в Седонe</h2>
-		<form class="search-form" method="post" action="https://echo.htmlacademy.ru">
-			<p class="search-field">
-				<label class="search-field-title" for="field-arrival">Дата заезда:</label>
-				<input class="search-field-arrival" id="field-arrival" type="text" name="date-arrival" placeholder="24 апреля 2017">
-			</p>
-			<p class="search-field">
-				<label class="search-field-title" for="field-exit">Дата выезда:</label>
-				<input class="search-field-exit" id="field-exit" type="text" name="date-exit" placeholder="4 июля 2017">
-			</p>
-			<p class="search-field">
-				<label class="search-field-title" for="field-adult">Взрослые:</label>
-				<input class="search-field-adult" id="field-adult" type="text" name="quality-adult" placeholder="2">
-			</p>
-			<p class="search-field">
-				<label class="search-field-title" for="field-child">Дети:</label>
-				<input class="search-field-child" id="field-child" type="text" name="quality-child" placeholder="0">
-			</p>
-			<button class="button search-form-button" type="submit">Найти</button>
-		</form>		
-	</section>
+	
+	<script src="js/script.js"></script>
 </body>
 </html>

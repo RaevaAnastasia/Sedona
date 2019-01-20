@@ -8,18 +8,20 @@
 	<link href="css/css.css" rel="stylesheet">
 </head>
 <body>
-	<header class="main-header">
+	<header class="main-header container">
 		<nav class="main-navigation">
+			<a class="main-navigation-logo" href="index.html"> 
+				<img src="img/logo.svg" width="140" height="71" alt="Логотип Седоны">
+			</a>
 			<ul class="site-navigation">
 				<li class="site-navigation-item"><a class="site-navigation-item-link"  href="info.html" aria-label="Перейти на страницу информации о Седоне">Информация</a></li>
-				<li class="site-navigation-item"><a class="site-navigation-item-link" href="photo.html" aria-label="Перейти на страницу с фото и видео">Фото и видео</a></li>
-				<li class="site-navigation-item"><a class="site-navigation-item-link" href="index.html" aria-label="Перейти на главную страницу сайта"><img src="img/logo.svg" width="140" height="71" alt="Логотип Седоны"></a></li>
+				<li class="site-navigation-item"><a class="site-navigation-item-link" href="photo.html" aria-label="Перейти на страницу с фото и видео">Фото и видео</a></li>				
 				<li class="site-navigation-item"><a class="site-navigation-item-link" href="map.html" aria-label="Перейти на страницу с картой штата">Карта штата</a></li>
-				<li class="site-navigation-item"><a class="site-navigation-item-link active" href="search.html" aria-label="Перейти на страницу выбора гостиницы">Гостиницы</a></li>
+				<li class="site-navigation-item"><a class="site-navigation-item-link" href="search.html" aria-label="Перейти на страницу выбора гостиницы">Гостиницы</a></li>
 			</ul>			
 		</nav>
 	</header>
-	<main>
+	<main class="container">
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр гостиниц</h2>
 			<form class="filters-form" method="post" action="https://echo.htmlacademy.ru">
@@ -155,7 +157,7 @@
 			</section>
 		</div>
 	</main>
-	<footer class="main-footer"> 
+	<footer class="main-footer container"> 
 		<p class="footer-tag">#visitSedona</p>
 		<ul class="footer-social-list">
 			<li class="footer-social-item"><a class="footer-social-item-link" href="https://twitter.com" aria-label="Перейти на страницу Седоны в Твиттере"><span class="visually-hidden">Twitter</span></a></li>
