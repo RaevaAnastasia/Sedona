@@ -25,52 +25,57 @@
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр гостиниц</h2>
 			<form class="filters-form" method="post" action="https://echo.htmlacademy.ru">
+				<div class="filters-form-wrapper">
 				 <fieldset class="filters-form-checkbox">
 				 	<legend class="filters-form-checkbox-title">Инфраструктура:</legend>
 				 	<ul class="filters-form-checkbox-container">
-				 		<li>
+				 		<li>				 			
+				 			<input class="filters-form-checkbox-item visually-hidden" id="pool" type="checkbox" name="pool" checked>
 				 			<label class="filters-form-checkbox-item-title" for="pool">Бассейн</label>
-				 			<input class="filters-form-checkbox-item" id="pool" type="checkbox" name="pool" checked>
 				 		</li>
-				 		<li>
+				 		<li>				 			
+				 			<input class="filters-form-checkbox-item visually-hidden" id="parking" type="checkbox" name="parking">
 				 			<label class="filters-form-checkbox-item-title" for="parking">Парковка</label>
-				 			<input class="filters-form-checkbox-item" id="parking" type="checkbox" name="parking">
 				 		</li>
-				 		<li>
+				 		<li>				 			
+				 			<input class="filters-form-checkbox-item visually-hidden" id="Wi-Fi" type="checkbox" name="Wi-Fi">
 				 			<label class="filters-form-checkbox-item-title" for="Wi-Fi">Wi-Fi</label>
-				 			<input class="filters-form-checkbox-item" id="Wi-Fi" type="checkbox" name="Wi-Fi">
 				 		</li>				 		
 				 	</ul>
 				 </fieldset>
 				 <fieldset class="filters-form-checkbox">
 				 	<legend class="filters-form-checkbox-title">Тип жилья:</legend>
 				 	<ul class="filters-form-checkbox-container">
-				 		<li>
+				 		<li>				 			
+				 			<input class="filters-form-checkbox-item visually-hidden" id="hostel" type="checkbox" name="hostel" checked>
 				 			<label class="filters-form-checkbox-item-title" for="hostel">Гостиница</label>
-				 			<input class="filters-form-checkbox-item" id="hostel" type="checkbox" name="hostel" checked>
 				 		</li>
-				 		<li>
+				 		<li>				 			
+				 			<input class="filters-form-checkbox-item visually-hidden" id="motel" type="checkbox" name="motel" checked>
 				 			<label class="filters-form-checkbox-item-title" for="motel">Мотель</label>
-				 			<input class="filters-form-checkbox-item" id="motel" type="checkbox" name="motel" checked>
 				 		</li>
-				 		<li>
+				 		<li>				 			
+				 			<input class="filters-form-checkbox-item visually-hidden" id="apartments" type="checkbox" name="apartments" checked>
 				 			<label class="filters-form-checkbox-item-title" for="apartments">Апартаменты</label>
-				 			<input class="filters-form-checkbox-item" id="apartments" type="checkbox" name="apartments" checked>
 				 		</li>				 		
 				 	</ul>
 				 </fieldset>
+				</div>
 				 <div class="filters-form-range">
-				 	<span class="filters-form-range-title">Стоимость в сутки (Р):</span>
-				 	<div class="filters-form-range-limits">
-				 		<span class="filters-form-range-limits-lower">от 0</span>
-				 		<span class="filters-form-range-limits-top">До 3000</span>
+				 	<div class="filters-form-range-title">Стоимость в сутки (Р):</div>
+				 	<div class="filters-form-range-price-control">
+		 		        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+						<label class="max-price">до <input type="text" name="max-price" value="3000"></label>	
 				 	</div>
-				 	<div class="filters-form-range-line-common"></div>
-                    <div class="filters-form-range-line"></div>
-                    <span class="filters-form-range-button" tabindex="0"></span>
-                    <span class="filters-form-range-button" tabindex="0"></span>				 	
-				 </div>				
-				<button class="button filter-button" type="submit">Показать</button>
+				 	<div class="filters-form-range-controls">
+		 		        <div class="scale">
+  							<div class="bar"></div>
+  						</div>
+  						<div class="range-toggle range-toggle-min" tabindex="0"></div>
+        				<div class="range-toggle range-toggle-max" tabindex="0"></div>
+				 	</div>  
+				 	<button class="button filter-button" type="submit">Показать</button>   				 	
+				 </div>					
 			</form>
 		</section>
 		<div class="results">			 
